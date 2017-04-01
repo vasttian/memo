@@ -67,7 +67,11 @@
 			},
 			methods: {
 				deletePlan(index) {
-
+          const delPlan = {
+            index,
+            singleTime: this.plans[index].singleTime,
+          };
+          this.$store.dispatch('deletePlan', delPlan);
 				},
 			},
 		}

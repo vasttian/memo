@@ -45,7 +45,7 @@
 				date: '',
 				singleTime: '',
 				comment: '',
-			}
+			};
 		},
 		methods: {
 			save() {
@@ -58,9 +58,6 @@
 				};
 
 				this.$store.dispatch('savePlan', plan);
-
-				// 总时间相应增加
-				// this.$store.dispatch('addTotalTime', this.totalTime);
         this.$router.go(-1);
 			}
 		}
