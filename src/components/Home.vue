@@ -3,7 +3,7 @@
 		<h1>任务追踪</h1>
 		<p>
 			<strong>
-				<router-link :to="{name: 'time_entries'}">创建一个任务</router-link>
+				<router-link :to="{name: 'time-entries'}">创建一个任务</router-link>
 			</strong>
 		</p>
 	</div>
