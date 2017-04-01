@@ -1,6 +1,8 @@
 # memo
 
-> A Vue.js project
+> A Vue.js project,
+Now use the bootstrap,
+After using Element instead.
 
 ## Build Setup
 
