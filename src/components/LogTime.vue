@@ -42,8 +42,14 @@
 		name: 'LogTime',
 		data() {
 			return {
+
+				// 发生时间
 				date: '',
+
+				// 持续事件
 				singleTime: '',
+
+				// 备注
 				comment: '',
 			};
 		},
@@ -58,7 +64,13 @@
 				};
 
 				this.$store.dispatch('savePlan', plan);
+
+				// 创建清单后跳到备忘清单列表，
         this.$router.go(-1);
+
+				// 也可以直接使用push
+        // this.$router.push({name: 'time-entries'});
+        // 不能使用this.$router.go({name: 'time-entries'});
 			}
 		}
 	}

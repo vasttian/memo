@@ -8,6 +8,8 @@ Vue.use(Vuex);
 const state = {
 	// 任务总时间
 	totalTime: 0,
+
+	// 备忘清单
 	list: [],
 };
 
