@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Home from '../components/Home.vue';
 import TimeEntries from '../components/TimeEntries.vue';
+import LogTime from '../components/LogTime.vue';
 
 Vue.use(Router)
 
@@ -21,6 +22,13 @@ const routes = [
     path: '/time-entries',
     name: 'time-entries',
     component: TimeEntries,
+    children: [
+      {
+        path: 'log-time',
+        name: 'log-time',
+        component: LogTime,
+      },
+    ],
   },
 ];
 
