@@ -18,7 +18,7 @@
       <div class="list-group">
         <a class="list-group-item" v-for="(plan, index) in plans">
           <div class="row">
-            <div class="col-sm-2 user-details">
+            <div class="col-sm-3 user-details">
               <img :src="plan.avatar" class="avatar img-circle img-responsive" />
               <p class="text-center">
                 <strong>
@@ -38,7 +38,7 @@
               </p>
             </div>
 
-            <div class="col-sm-7 comment-section">
+            <div class="col-sm-6 comment-section">
               <p>{{ plan.comment }}</p>
             </div>
 
@@ -79,7 +79,7 @@
 
 <style>
   .avatar {
-    height: 75px;
+    height: 55px;
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 10px;

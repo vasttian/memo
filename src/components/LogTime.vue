@@ -32,7 +32,7 @@
       </div>
     </div>
     <button class="btn btn-primary" @click="save()">保存</button>
-    <router-link to="{name: 'time-entries'}" class="btn btn-danger">取消</router-link>
+    <router-link :to="{name: 'time-entries'}" class="btn btn-danger">取消</router-link>
     <hr>
   </div>
 </template>
